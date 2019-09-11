@@ -6,9 +6,3 @@ for my_objective in my_list_1:
 
 print("Без повторений - ", my_list_1)
 
-my_list_1 = [2, 2, 5, 12, 8, 2, 12]
-for my_objective in my_list_1:
-    while my_objective in my_list_1:
-        my_list_1.remove(my_objective)
-
-print("Без повторений - ", my_list_1)
