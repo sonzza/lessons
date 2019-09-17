@@ -5,7 +5,7 @@
 # 10-20 чисел в списке вполне достаточно.
 
 
-numbers = [5, 12, 34, 55, 98, 75, 78, -10, -45, -69, -13, -87, -88, 10, 30, 23]
+numbers = [5, 12, 34, 55, 98, 75, 78, -10, -45, -69, -13, -87, -88, -12, 10, 30, 23]
 
 multiple_numbers = [number for number in numbers if number % 3 == 0 and number > 0 and number % 4 !=0]
 print(multiple_numbers)

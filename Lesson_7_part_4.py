@@ -4,12 +4,15 @@
 # результат, который вернула функция. Обработать возможность возникновения исключительной ситуации,
 # которая поднимается внутри функции.
 
+
 def value_error_func(number):
-    if number != 13:
+    if 1 < number < 100 and number != 13:
         number = number ** 2
         return number
-    else:
+    elif number == 13:
         raise ValueError('о, боже! ТРИНАДЦАТЬ')
+    else:
+        raise ValueError('Вы ввели неправильное число')
 
 
 user_number = int(input('Введите число от 1 до 100: '))
