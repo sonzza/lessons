@@ -12,9 +12,16 @@ def value_error_func(number):
     elif number == 13:
         raise ValueError('о, боже! ТРИНАДЦАТЬ')
     else:
-        raise ValueError('Вы ввели неправильное число')
+        raise Exception('Вы ввели неправильное число')
 
 
 user_number = int(input('Введите число от 1 до 100: '))
 
-print('Квадрат введеного числа равен ', value_error_func(user_number))
+try:
+    result = value_error_func(user_number)
+except ValueError:
+    print('ЭТО ЖЕ ТРИНАДЦАТЬ!')
+except Exception:
+    print('Вы ввели неправильное число')
+else:
+    print(result)

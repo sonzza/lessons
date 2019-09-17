@@ -20,3 +20,4 @@ def ternary_func(roll):
 
 new_numbers = ternary_func(numbers)
 print(new_numbers)
+print(numbers)
