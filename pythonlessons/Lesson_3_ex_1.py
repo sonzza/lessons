@@ -19,6 +19,7 @@ def load_iatas(orig, dest):
 
 try:
     city_list = load_iatas(origin_name, destination_name)
+    print(city_list)
     link_cal = requests.get("http://min-prices.aviasales.ru/calendar_preload?origin={}&destination={}".format(city_list[0], city_list[1]))
 except KeyError:
     print('Город не найден')
