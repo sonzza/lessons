@@ -25,4 +25,3 @@ class Hamster:
             return False
 
 
-
