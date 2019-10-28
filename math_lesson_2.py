@@ -20,10 +20,10 @@ x = numpy.linspace(0, 10, 360)
 x1 = []
 y1 = []
 points = []
-round_center = input("Введите центр окружности (через пробел): ")
+# round_center = input("Введите центр окружности (через пробел): ")
 R = input("Введите радиус: ")
-a = float(round_center.split()[0])
-b = float(round_center.split()[1])
+# a = float(round_center.split()[0])
+# b = float(round_center.split()[1])
 for i in range(360):
     tmp_x = 0
     tmp_y = 0
