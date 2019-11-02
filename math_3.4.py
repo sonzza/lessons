@@ -30,4 +30,4 @@ def func_1(m):
 
 
 x2, y2 = fsolve(func, (4, 20))
-print("x больше ", x2, " y больше ", y2)
+print("x меньше ", x2, " y меньше ", y2)
